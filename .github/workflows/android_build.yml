@@ -28,10 +28,10 @@
 
       # 3
         - name: Sign APK
-         uses: r0adkll/sign-android-release@v1
+          uses: r0adkll/sign-android-release@v1
       # ID used to access action output
-         id: sign_app
-         with:
+          id: sign_app
+          with:
               releaseDirectory: app/build/outputs
               signingKeyBase64: ${{ secrets.KEYS_STORE }}
               alias: ${{ secrets.KEY_ALIAS }}
