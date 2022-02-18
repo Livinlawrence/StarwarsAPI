@@ -1,5 +1,5 @@
 # Starwars API App
-![Workflow result](https://github.com/Livinlawrence/StarwarsAPI/workflows/android_build/badge.svg)
+![Workflow result](https://github.com/Livinlawrence/StarwarsAPI/workflows/android_build.yml/badge.svg)
 Android Kotlin App in Jetpack Compose with MVVM Clean Architecture
 
 App UI - Jetpack Compose
