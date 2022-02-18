@@ -1,20 +1,16 @@
   name: Android Build
-
   on: pull_request
 
   jobs:
     build:
       runs-on: ubuntu-latest
-
       steps:
-        - uses: actions/checkout@v1
-        - name: Setup JDK
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: setup_jdk
           uses: actions/setup-java@v1
           with:
             java-version: 11
 
-          - name: Run test
-            run: ./gradlew test
-
-          - name: Build Project
-            run: ./gradlew assemble
+        - name: Run_test
+          run: ./gradlew test
