@@ -23,11 +23,11 @@
           with:
               java-version: 11
      # 2
-       - name: Generate Release APK
-         run: ./gradlew app:bundleRelease
+        - name: Generate Release APK
+          run: ./gradlew app:bundleRelease
 
       # 3
-       - name: Sign APK
+        - name: Sign APK
          uses: r0adkll/sign-android-release@v1
       # ID used to access action output
          id: sign_app
@@ -37,8 +37,6 @@
               alias: ${{ secrets.KEY_ALIAS }}
               keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
               keyPassword: ${{ secrets.KEY_PASSWORD }}
-
-
         - name: Upload build outputs (APKs)
           uses: actions/upload-artifact@v2
           with:
