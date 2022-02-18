@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Starwars API App</string>
+    <string name="label_birth_year">Birth Year</string>
+    <string name="label_home_world">Home world</string>
+    <string name="label_height">Height</string>
+    <string name="label_language">Language</string>
+    <string name="label_films">Films</string>
+</resources>
