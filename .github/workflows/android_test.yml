@@ -7,7 +7,6 @@ on:
 
 jobs:
   test:
-    needs: build
     runs-on: macOS-latest # enables hardware acceleration in the virtual machine
 
     timeout-minutes: 30
